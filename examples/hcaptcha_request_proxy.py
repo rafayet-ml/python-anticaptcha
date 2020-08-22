@@ -7,7 +7,7 @@ from os import environ
 from python_anticaptcha import AnticaptchaClient, HCaptchaTask
 
 api_key = environ["KEY"]
-proxy_url = environ["PROXY_URL"]  # eg. socks5://user:password/123.123.123.123:8888/
+proxy_url = environ["PROXY_URL"]  # eg. socks5://user:password@123.123.123.123:8888/
 site_key_pattern = 'data-sitekey="(.+?)"'
 url = "http://hcaptcha.jawne.info.pl/"
 client = AnticaptchaClient(api_key)
